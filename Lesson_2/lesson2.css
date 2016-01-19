@@ -22,15 +22,33 @@ h1{
 	position: relative;
 	background-color: pink;
 	padding: 20px;
-	margin: 0 auto;
+	margin: 10px auto;
 	width: 500px;
+	height: 300px;
 	border-width: 15px;
 	border-style: dotted;
 
 }
 
 #box1{
-	position: absolute;
+	position: relative;
+	/*position: absolute;*/
+}
+
+#box2{
+	position: absolute; 
+	/*position: relative; */
+	top: 30px;
+}
+
+#cigar{
+	height: 100px;
+	width: 150px;
+}
+
+#cereal{
+	height: 100px;
+	width: 150px;
 }
 
 .test{
@@ -46,6 +64,50 @@ a{
 a:visited{
 	text-decoration: none;
 }
+
+a:link{
+	text-decoration: none;
+}
+
+/* Standard syntax */
+@keyframes square {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+#animation{
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	position: relative;
+	animation-name: square;
+	animation-duration: 4s;
+	animation-iteration-count: 3;
+}
+
+#rotation{
+	margin: 20px;
+    width: 100px;
+    height: 100px;
+    background: #f00;
+	animation-name: spin;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+	
 
 /* The animation code */
 /*@keyframes example {
