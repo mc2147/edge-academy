@@ -1,3 +1,63 @@
 h1{
-	color: red;
+	color: white;
 }
+
+#header{
+	background-color: green;
+	width: 95%;
+	padding: 15px;
+	margin: 0 auto;
+	position: relative;
+	text-align: center;
+	border-radius: 15px;
+}
+
+.blog-list li{
+	display: inline;
+	padding: 5px;
+	color: white;
+}
+
+.container{
+	position: relative;
+	background-color: pink;
+	padding: 20px;
+	margin: 0 auto;
+	width: 500px;
+	border-width: 15px;
+	border-style: dotted;
+
+}
+
+#box1{
+	position: absolute;
+}
+
+.test{
+	right: 0px;
+	position: relative;
+	top-margin: 30px;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:visited{
+	text-decoration: none;
+}
+
+/* The animation code */
+/*@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+} */
+
+/* The element to apply the animation to */
+/*div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+}  */
